@@ -1,0 +1,266 @@
+@font-face {
+  font-family: GeistRegular;
+  src: url(/fonts/Geist-Regular.woff2);
+}
+@font-face {
+  font-family: GeistMono;
+  src: url(/fonts/GeistMono-Regular.ttf);
+}
+
+:root {
+  --main-font: GeistRegular;
+  --secondary-font: GeistMono;
+  --primary-color: #000;
+  --secondary-color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: GeistRegular;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+.navContainer {
+  width: 100%;
+  padding: 2% 4% 0 4%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  backdrop-filter: none;
+  border: none;
+  transition: all 0.2s ease-in;
+}
+
+.navContainer.scrolled {
+  padding: 10px 30px;
+  width: 92%;
+  margin: 20px auto 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.973);
+  border-radius: 15px;
+  box-shadow: 10 10px 30px -10px rgba(255, 255, 255, 0.171);
+}
+
+.bigContainer {
+  width: 100%;
+  padding: 0 2%;
+  margin-top: 100px; /* Add margin to prevent content from going under navbar */
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+/* ************************* Nav Section ************************* */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.navLogo h1 {
+  font-size: 1.5rem;
+  font-family: var(--secondary-font);
+  font-weight: 400;
+}
+.navMenu ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  gap: 35px;
+}
+.navMenu li a {
+  font-size: 1rem;
+  font-weight: 100;
+  font-family: var(--secondary-font);
+}
+
+.navButtons button {
+  font-family: var(--secondary-font);
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.navSignIn {
+  background-color: transparent !important;
+  color: #fff !important;
+  border: 1px solid #ffffff42 !important;
+  padding: 10px 15px !important;
+  margin-right: 10px !important;
+  font-family: var(--secondary-font) !important;
+  text-transform: uppercase;
+  transition: border 0.3s ease-in-out;
+}
+.navSignIn:hover {
+  border: 1px solid #fff !important;
+}
+
+/* ************************* Hero Section ************************* */
+.hero {
+  height: 100vh;
+  overflow: hidden;
+  margin-top: 30px;
+  border: none;
+  text-align: center;
+  border-radius: 20px;
+  position: relative;
+  width: 100%;
+  background-position: 50%;
+  background-size: cover;
+  background-image: url(https://www.cursor.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fgradient-hero-prerender.68e92d51.webp&w=3840&q=75);
+}
+
+.heroHeading h1 {
+  font-size: 6.5rem;
+  font-family: var(--secondary-font);
+  padding-top: 50px;
+  font-style: bold;
+  font-weight: bolder;
+}
+.heroText p {
+  font-size: 1.5rem;
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  padding-top: 20px;
+}
+
+.heroButtons button {
+  position: relative;
+  padding: 20px 50px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 40px 10px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-family: var(--main-font);
+}
+.heroButtons button::before {
+  content: "";
+  position: absolute;
+  inset: -5px;
+  border: 2px solid #ffffff2d;
+  border-radius: 12px;
+  pointer-events: none;
+  transition: border 0.2s ease-in-out;
+}
+.heroButtons button:hover::before {
+  border: 2px solid #ffffff;
+}
+
+.watchDemo {
+  background-color: #000;
+  color: #fff;
+}
+
+.heroImage {
+  padding: 10px 20px;
+}
+
+.heroImage img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* ************************* Trusted By Section ************************* */
+.trustedBy {
+  width: 100%;
+  padding: 4rem 0 4rem 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.trustedBy span {
+  font-size: 1rem;
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  padding-top: 20px;
+}
+.trustedCompany {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  flex-wrap: wrap;
+}
+.trustedCompany svg {
+  width: 10rem;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 0.3s ease-in-out;
+}
+.trustedCompany svg:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+/* ************************** Tab Tab Tab Section ************************** */
+.tabTab {
+  position: relative;
+  text-align: center;
+  margin-top: 4rem;
+}
+.tabTab span {
+  font-size: 3rem;
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  padding-top: 20px;
+}
+.tabTab p {
+  font-size: 1.2rem;
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  padding-top: 8px;
+}
+
+/* ************************** Tab Tab Tab Video Section ************************** */
+.tabTabVideo {
+  position: relative;
+  margin-top: 30px;
+  border-radius: 20px;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://www.cursor.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fgradient-hero-prerender.68e92d51.webp&w=3840&q=75);
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tabTabVideo video {
+  position: absolute;
+  bottom: 0;
+  object-fit: cover;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 50%;
+  height: auto;
+}
