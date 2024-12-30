@@ -127,11 +127,11 @@ a {
 }
 
 .heroHeading h1 {
-  font-size: 6.5rem;
-  font-family: var(--secondary-font);
+  font-size: 8rem;
+  font-family: var(--main-font);
   padding-top: 50px;
   font-style: bold;
-  font-weight: bolder;
+  font-weight: 900;
 }
 .heroText p {
   font-size: 1.5rem;
@@ -142,7 +142,7 @@ a {
 
 .heroButtons button {
   position: relative;
-  padding: 20px 50px;
+  padding: 16px 40px;
   border-radius: 10px;
   border: none;
   font-size: 1rem;

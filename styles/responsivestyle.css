@@ -1,0 +1,123 @@
+/* Mobile First Approach */
+@media screen and (max-width: 768px) {
+  /* Nav Section */
+  .navContainer {
+    display: none;
+  }
+
+  .navContainer.scrolled {
+    display: none;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .navMenu {
+    width: 100%;
+  }
+
+  .navMenu ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .navButtons {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .navButtons button {
+    width: 100%;
+  }
+
+  /* Hero Section */
+  .heroHeading h1 {
+    font-size: 3rem;
+    padding-top: 30px;
+  }
+
+  .heroText p {
+    font-size: 1.2rem;
+    padding: 0 20px;
+  }
+
+  .heroButtons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 20px;
+  }
+
+  .heroButtons button {
+    width: 100%;
+    margin: 0;
+  }
+
+  .heroImage {
+    padding: 20px 10px;
+  }
+
+  /* Trusted By Section */
+  .trustedBy {
+    padding: 2rem 0;
+  }
+
+  .trustedCompany svg {
+    width: 8rem;
+  }
+
+  /* Tab Tab Section */
+  .tabTab span {
+    font-size: 2rem;
+  }
+
+  .tabTab p {
+    font-size: 1rem;
+    padding: 0 20px;
+  }
+
+  .tabTabVideo video {
+    max-width: 90%;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Nav Section */
+  .navContainer.scrolled {
+    width: 94%;
+  }
+
+  .navMenu ul {
+    gap: 20px;
+  }
+
+  /* Hero Section */
+
+  .heroText p {
+    font-size: 1.3rem;
+  }
+
+  /* Trusted By Section */
+  .trustedCompany svg {
+    width: 9rem;
+  }
+}
+
+/* Large Screens */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .navContainer.scrolled {
+    width: 94%;
+  }
+}
+
+/* Extra Large Screens */
+@media screen and (min-width: 1441px) {
+  .bigContainer {
+    max-width: 1920px;
+    margin: 100px auto 0 auto;
+  }
+}
