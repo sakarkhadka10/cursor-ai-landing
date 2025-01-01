@@ -87,6 +87,25 @@ a {
   font-family: var(--secondary-font);
 }
 
+.navMenu li {
+  position: relative;
+}
+
+.navMenu li::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.2s ease-in-out;
+}
+
+.navMenu li:hover::after {
+  width: 70%;
+}
+
 .navButtons button {
   font-family: var(--secondary-font);
   background-color: var(--secondary-color);
