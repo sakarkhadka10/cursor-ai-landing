@@ -224,6 +224,7 @@ a {
   position: relative;
   text-align: center;
   margin-top: 4rem;
+  margin-bottom: 2rem;
 }
 .tabTab span {
   font-size: 3rem;
@@ -262,5 +263,50 @@ a {
   border-radius: 10px;
   width: 100%;
   max-width: 50%;
+  height: auto;
+}
+
+/* ************************** CodeBase Section ************************** */
+.codeBase {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+.codeBase h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  font-family: var(--main-font);
+}
+.codeBase p {
+  font-size: 1.2rem;
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  padding-top: 8px;
+  padding-bottom: 2rem;
+}
+
+.codeBaseVideo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  margin-top: 2rem;
+  background-image: url(https://www.cursor.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fgradient-hero-prerender.68e92d51.webp&w=3840&q=75);
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.codeBaseVideo video {
+  position: absolute;
+  bottom: 0;
+  object-fit: cover;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 60%;
   height: auto;
 }
