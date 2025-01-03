@@ -6,13 +6,18 @@
     <title>Cursor AI</title>
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/responsivestyle.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- ************************* Nav Section ************************* -->
     <div class="navContainer">
       <section class="nav">
         <div class="navLogo">
-          <h1>CURSOR</h1>
+          <i id="navLogoIcon" class="ri-instance-line"></i>
+          <h1 id="navLogoText">CURSOR</h1>
         </div>
         <div class="navMenu">
           <ul>
@@ -183,7 +188,7 @@
       </section>
 
       <!-- ************************** CodeBase Section ************************** -->
-        <section class="codeBase">
+      <section class="codeBase">
         <h1>Knows Your Codebase</h1>
         <p>
           Get answers from your codebase or refer to files or docs. <br />
@@ -196,6 +201,12 @@
       </section>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/motion@11.11.13/dist/motion.js"></script>
+    <script>
+      const { animate, scroll, stagger } = Motion;
+    </script>
+
     <script src="scripts/navbar.js"></script>
+    <script src="scripts/animation.js"></script>
   </body>
 </html>

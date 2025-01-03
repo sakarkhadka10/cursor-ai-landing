@@ -68,11 +68,25 @@ a {
   align-items: center;
   text-transform: uppercase;
 }
-
+.navLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.navLogo i {
+  font-size: 2.5rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+.navLogo i:hover {
+  transform: scale(1.1);
+}
 .navLogo h1 {
   font-size: 1.5rem;
   font-family: var(--secondary-font);
   font-weight: 400;
+  cursor: pointer;
 }
 .navMenu ul {
   display: flex;
@@ -170,7 +184,10 @@ a {
   cursor: pointer;
   font-size: 1.2rem;
   font-family: var(--main-font);
+  background-color: #fff;
 }
+
+/* ! Old Button Design Simply Uncommet this and comment the above one */
 .heroButtons button::before {
   content: "";
   position: absolute;
@@ -180,13 +197,14 @@ a {
   pointer-events: none;
   transition: border 0.2s ease-in-out;
 }
+/* **** Button Design Change ****** */
 .heroButtons button:hover::before {
   border: 2px solid #ffffff;
 }
 
 .watchDemo {
-  background-color: #000;
-  color: #fff;
+  background-color: #000 !important;
+  color: #fff !important;
 }
 
 .heroImage {
